@@ -4,5 +4,7 @@ WORKDIR /app
 ADD package.json /app/
 ADD . /app
 RUN npm install
+RUN npm install request --save
+RUN npm install cheerio --save
 EXPOSE 8888
 CMD ["npm", "start"]
