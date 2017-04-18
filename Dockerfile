@@ -1,10 +1,10 @@
 FROM node
 # Create app directory
-RUN mkdir -p /Service
-WORKDIR /Service
+RUN mkdir -p /home/Service
+WORKDIR /home/Service
  
 # Bundle app source
-COPY ./Service
+COPY ./home/Service
 RUN npm install
  
 EXPOSE 8888
