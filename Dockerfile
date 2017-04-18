@@ -1,4 +1,4 @@
-FROM readytalk/nodejs
+FROM nodejs
 # Create app directory
 RUN mkdir -p /home/Service
 WORKDIR /home/Service
