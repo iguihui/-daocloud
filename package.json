@@ -1,0 +1,13 @@
+{
+ "name": "daocloud_rest",
+ "version": "1.0.0",
+ "description": "Node.js on Docker",
+ "author": "winston",
+ "main": "server.js",
+ "scripts": {
+ "start": "node server.js"
+ },
+ "dependencies": {
+ "request": "*"
+ }
+}
