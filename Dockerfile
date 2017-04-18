@@ -1,11 +1,7 @@
-FROM hub.c.163.com/nce2/nodejs:0.12.2
-# Create app directory
-RUN mkdir -p /home/Service
-WORKDIR /home/Service
- 
-# Bundle app source
-COPY ./home/Service
+FROM readytalk/nodejs
+RUN mkdir -p /app
+WORKDIR /app
+ADD package.json /app/
 RUN npm install
- 
-EXPOSE 8888
-CMD [ "npm", "start" ]
+ADD . /app
+ENTRYPOINT ["/nodejs/bin/npm", "start"]
