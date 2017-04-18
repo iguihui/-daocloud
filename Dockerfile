@@ -5,4 +5,4 @@ ADD package.json /app/
 ADD . /app
 RUN npm install
 EXPOSE 8888
-CMD ["/nodejs/bin/npm", "start"]
+CMD ["npm", "start"]
