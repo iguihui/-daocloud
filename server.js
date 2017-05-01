@@ -1,5 +1,5 @@
 var request = require('request');
-var PORT = 8888;
+var PORT = 80;
 //重启DaoCloud
 app.get('/http/daocloud/restart/:appid/:token',function(req, res){
     var appid = req.params.appid;
