@@ -7,4 +7,4 @@ RUN npm install
 RUN npm install request --save
 RUN npm install cheerio --save
 EXPOSE 8888
-ENTRYPOINT ["/nodejs/bin/npm", "start"]
+ENTRYPOINT ["npm", "start"]
