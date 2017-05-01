@@ -6,5 +6,5 @@ ADD . /app
 RUN npm install
 RUN npm install request --save
 RUN npm install cheerio --save
-EXPOSE 8888
+EXPOSE 80
 ENTRYPOINT ["npm", "start"]
