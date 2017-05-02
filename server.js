@@ -14,3 +14,4 @@ app.get('/http/daocloud/restart/:appid/:token',function(req, res){
             else
                 res.send(body);
     })
+});
